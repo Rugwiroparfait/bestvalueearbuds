@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+<header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200/80">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold text-primary">
+            <a href="/">ProductLogo</a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8 text-lg">
+            <a href="#features" class="hover:text-secondary transition-colors">Features</a>
+            <a href="#process" class="hover:text-secondary transition-colors">Process</a>
+            <a href="#testimonials" class="hover:text-secondary transition-colors">Testimonials</a>
+        </nav>
+        <a href="#" class="hidden md:inline-block bg-secondary text-white font-bold py-2 px-6 rounded-lg hover:bg-secondary-dark transition-colors">
+            Get Started
+        </a>
+        <button class="md:hidden" aria-label="Open menu">
+             <Icon name="heroicons:bars-3-solid" class="w-6 h-6 text-primary" />
+        </button>
+    </div>
+</header>
